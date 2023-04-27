@@ -1,4 +1,5 @@
 import {existsSync, promises} from 'fs'
+import { type } from 'os';
 const path = './db/products.json' ;
 
 class ProductManager {
@@ -38,23 +39,38 @@ class ProductManager {
 
           const productos = await this.getProducts();
 
-          // ************ validaciones ***********
+          // ************ validaciones generales ***********
           if ( productos.find(( p ) => p.code === productoNuevo.code )) {
-            throw new Error(`El producto ${ productoNuevo.title } no se registro ya que el codigo ${ productoNuevo.code } ya existe registrado para otro producto, ingrese otro codigo por favor`);
+            throw  Error(`El producto ${ productoNuevo.title } no se registro ya que el codigo ${ productoNuevo.code } ya existe registrado para otro producto, ingrese otro codigo por favor`);
           }
 
           for ( const propiedad in productoNuevo ) {
             if ( productoNuevo[propiedad] === undefined || productoNuevo[propiedad] === null || productoNuevo[propiedad] === '' ) {
-              throw new Error(`Propiedad ${propiedad} con valor ${productoNuevo[propiedad]} es invalido, \nPor favor ingrese un valor valido`);
+              throw  Error(`Propiedad ${propiedad} con valor ${productoNuevo[propiedad]} es invalido, \nPor favor ingrese un valor valido`);
             }
           }
 
+          // ************ validaciones especificas *********** 
+          const { title, description, code, price, status, stock, category } = productoNuevo;
           
+          if(
+             typeof (title) !== 'string' || 
+             typeof (description) !== 'string' || 
+             typeof (code) !== 'string' || 
+             typeof (price) !== 'number' || 
+             typeof (status) !== 'boolean' && ( status !== true || status !== false )  || 
+             typeof (stock) !== 'number' || 
+             typeof (category) !== 'string' ){
+
+             return   Error(`Los tipos de datos no coinciden o faltan argumentos, vuelva a intentar`);
+          }
 
 
           // agregamos thumbnail si existe
-          if( thumbnail ) {
-            productoNuevo.thumbnail = thumbnail;
+            if( Array.isArray(thumbnail) && thumbnail.every(elemento => typeof (elemento) === 'string')){
+                productoNuevo.thumbnail = thumbnail;
+            } else {
+                productoNuevo.thumbnail = [];
           }
 
           productos.length === 0 ? ( productoNuevo.id = 1 ) : ( productoNuevo.id = productos[productos.length - 1].id + 1 );
@@ -62,12 +78,13 @@ class ProductManager {
     
           // lo transforma el arreglo a cadena de texto
           await promises.writeFile( path, JSON.stringify(productos, null, '\t') );
+          
           return productoNuevo;
 
         } catch ( error ) { 
 
             console.log( error );
-            throw new Error `${ error.message }`
+            return  Error `${ error.message }`
 
         }
       };
@@ -89,12 +106,12 @@ class ProductManager {
         } catch ( error ) {
 
             console.log( error );
-            throw new Error `${ error.message }`
+            throw  Error `${ error.message }`
 
         }
       };
 
-      updateProduct = async ( id , productoActualizado ) => {
+      updateProduct = async ( id , productoActualizar ) => {
 
         try {
 
@@ -105,7 +122,7 @@ class ProductManager {
 
                 productos[posicion] = {
                     ...productos[posicion],
-                    ...productoActualizado
+                    ...productoActualizar
                 }
 
                 await promises.writeFile( path, JSON.stringify(productos, null, '\t' ));
@@ -120,7 +137,7 @@ class ProductManager {
         }catch ( error ) {
 
             console.log( error );
-            throw new Error `${ error.message }`
+            throw  Error `${ error.message }`
 
         }
 
@@ -150,7 +167,7 @@ class ProductManager {
           } catch ( error ) {
 
             console.log( error );
-            throw new Error `${ error.message }`
+            throw  Error `${ error.message }`
 
          }
 

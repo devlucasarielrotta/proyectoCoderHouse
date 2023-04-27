@@ -1,11 +1,11 @@
 [
 	{
-		"title": "Lavandina",
-		"description": "Para quitar manchas",
-		"price": 200,
-		"thumbnail": "www.google.com/Lavandina",
-		"code": 1,
-		"stock": 100,
+		"title": "Rejilla",
+		"description": "Para secar vajillas",
+		"price": 400,
+		"thumbnail": "www.google.com/Rejilla",
+		"code": 2,
+		"stock": 200,
 		"id": 1
 	},
 	{
@@ -79,8 +79,7 @@
 		"code": 9,
 		"stock": 200,
 		"id": 9
-	}
-	,
+	},
 	{
 		"title": "Blem",
 		"description": "Para los muebles",
@@ -89,5 +88,291 @@
 		"code": 10,
 		"stock": 200,
 		"id": 10
+	},
+	{
+		"title": "Producto 11",
+		"description": "nuevo producto",
+		"code": "11",
+		"price": 10000,
+		"status": "true",
+		"stock": 50,
+		"category": "nuevos",
+		"thumbnail": [],
+		"id": 11
+	},
+	{
+		"title": "Producto 11",
+		"description": "nuevo producto",
+		"code": "12",
+		"price": 10000,
+		"status": "true",
+		"stock": 50,
+		"category": "nuevos",
+		"thumbnail": [],
+		"id": 12
+	},
+	{
+		"title": "Producto 11",
+		"description": "nuevo producto",
+		"code": "13",
+		"price": 10000,
+		"status": "true",
+		"stock": 50,
+		"category": "nuevos",
+		"thumbnail": [],
+		"id": 13
+	},
+	{
+		"title": "Producto 11",
+		"description": "nuevo producto",
+		"code": "14",
+		"price": 10000,
+		"status": "true",
+		"stock": 50,
+		"category": "nuevos",
+		"thumbnail": [],
+		"id": 14
+	},
+	{
+		"title": "Producto 11",
+		"description": "nuevo producto",
+		"code": "15",
+		"price": 10000,
+		"status": false,
+		"stock": 50,
+		"category": "nuevos",
+		"thumbnail": [],
+		"id": 15
+	},
+	{
+		"title": "Producto 11",
+		"description": "nuevo producto",
+		"code": "16",
+		"price": 10000,
+		"status": false,
+		"stock": 50,
+		"category": "nuevos",
+		"thumbnail": [],
+		"id": 16
+	},
+	{
+		"title": "Producto 11",
+		"description": "nuevo producto",
+		"code": "17",
+		"price": 10000,
+		"status": "dasdasd",
+		"stock": 50,
+		"category": "nuevos",
+		"thumbnail": [],
+		"id": 17
+	},
+	{
+		"title": "Producto 11",
+		"description": "nuevo producto",
+		"code": "18",
+		"price": 10000,
+		"status": "dasdasd",
+		"stock": 50,
+		"category": "nuevos",
+		"thumbnail": [],
+		"id": 18
+	},
+	{
+		"title": "Producto 11",
+		"description": "nuevo producto",
+		"code": "19",
+		"price": 10000,
+		"status": "dasdasd",
+		"stock": 50,
+		"category": 5000,
+		"thumbnail": [],
+		"id": 19
+	},
+	{
+		"title": "Producto 11",
+		"description": "nuevo producto",
+		"code": "20",
+		"price": 10000,
+		"status": "dasdasd",
+		"stock": 50,
+		"category": 5000,
+		"thumbnail": [],
+		"id": 20
+	},
+	{
+		"title": "Producto 11",
+		"description": "nuevo producto",
+		"code": "21",
+		"price": 10000,
+		"status": "dasdasd",
+		"stock": 50,
+		"category": 5000,
+		"thumbnail": [],
+		"id": 21
+	},
+	{
+		"title": "Producto 11",
+		"description": "nuevo producto",
+		"code": "223",
+		"price": 10000,
+		"status": "dasdasd",
+		"stock": 50,
+		"category": 5000,
+		"thumbnail": [],
+		"id": 22
+	},
+	{
+		"title": "Producto 11",
+		"description": "nuevo producto",
+		"code": "23",
+		"price": 10000,
+		"status": "dasdasd",
+		"stock": 50,
+		"category": 5000,
+		"thumbnail": [],
+		"id": 23
+	},
+	{
+		"title": "Producto 11",
+		"description": "nuevo producto",
+		"code": "24",
+		"price": 10000,
+		"status": "dasdasd",
+		"stock": 50,
+		"category": 5000,
+		"thumbnail": [],
+		"id": 24
+	},
+	{
+		"title": "Producto 11",
+		"description": "nuevo producto",
+		"code": "25",
+		"price": 10000,
+		"status": "dasdasd",
+		"stock": 50,
+		"category": 5000,
+		"thumbnail": [],
+		"id": 25
+	},
+	{
+		"title": "Producto 11",
+		"description": "nuevo producto",
+		"code": "27",
+		"price": 10000,
+		"status": "dasdasd",
+		"stock": 50,
+		"category": 5000,
+		"thumbnail": [],
+		"id": 26
+	},
+	{
+		"title": "Producto 11",
+		"description": "nuevo producto",
+		"code": "28",
+		"price": 10000,
+		"status": "dasdasd",
+		"stock": 50,
+		"category": 5000,
+		"thumbnail": [],
+		"id": 27
+	},
+	{
+		"title": "Producto 11",
+		"description": "nuevo producto",
+		"code": "29",
+		"price": 10000,
+		"status": "dasdasd",
+		"stock": 50,
+		"category": 5000,
+		"thumbnail": [],
+		"id": 28
+	},
+	{
+		"title": "Producto 11",
+		"description": "nuevo producto",
+		"code": "30",
+		"price": 10000,
+		"status": "dasdasd",
+		"stock": 50,
+		"category": 5000,
+		"thumbnail": [],
+		"id": 29
+	},
+	{
+		"title": "Producto 11",
+		"description": "nuevo producto",
+		"code": "31",
+		"price": 10000,
+		"status": "dasdasd",
+		"stock": 50,
+		"category": 5000,
+		"thumbnail": [],
+		"id": 30
+	},
+	{
+		"title": "Producto 11",
+		"description": "nuevo producto",
+		"code": "32",
+		"price": 10000,
+		"status": "dasdasd",
+		"stock": 50,
+		"category": 5000,
+		"thumbnail": [],
+		"id": 31
+	},
+	{
+		"title": "Producto 11",
+		"description": "nuevo producto",
+		"code": "33",
+		"price": 10000,
+		"status": "dasdasd",
+		"stock": 50,
+		"category": 5000,
+		"thumbnail": [],
+		"id": 32
+	},
+	{
+		"title": "Producto 11",
+		"description": "nuevo producto",
+		"code": "333",
+		"price": 10000,
+		"status": "dasdasd",
+		"stock": 50,
+		"category": 5000,
+		"thumbnail": [],
+		"id": 33
+	},
+	{
+		"title": "Producto 11",
+		"description": "nuevo producto",
+		"code": "3343",
+		"price": 10000,
+		"status": "dasdasd",
+		"stock": 50,
+		"category": 5000,
+		"thumbnail": [],
+		"id": 34
+	},
+	{
+		"title": "Producto 11",
+		"description": "nuevo producto",
+		"code": "333333",
+		"price": 10000,
+		"status": true,
+		"stock": 50,
+		"category": "5000",
+		"thumbnail": [],
+		"id": 35
+	},
+	{
+		"title": "Producto 11",
+		"description": "nuevo producto",
+		"code": "3333333",
+		"price": 10000,
+		"status": true,
+		"stock": 50,
+		"category": "5000",
+		"thumbnail": [],
+		"id": 36
 	}
 ]
