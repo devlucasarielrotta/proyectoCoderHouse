@@ -1,5 +1,4 @@
 import {existsSync, promises} from 'fs'
-import { type } from 'os';
 const path = './db/products.json' ;
 
 class ProductManager {

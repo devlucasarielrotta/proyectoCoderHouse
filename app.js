@@ -1,6 +1,7 @@
 //import ProductManager from './productoManager.js';
 import express from 'express';
-import {router as productsRouter} from './src/routes/products.routes.js'
+import { router as productsRouter } from './src/routes/products.routes.js'
+import { router as cartsRouter } from './src/routes/carts.routes.js'
 
 
 const app = express(); // crea el servidor
@@ -13,7 +14,7 @@ app.use(express.urlencoded({extended: true}));
 
 // routes
 app.use('/api/products/',productsRouter);
-app.use('/api/carts/',productsRouter);
+app.use('/api/carts/',cartsRouter);
 
 
 app.listen(port, () => {
