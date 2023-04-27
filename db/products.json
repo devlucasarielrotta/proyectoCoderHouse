@@ -1,0 +1,93 @@
+[
+	{
+		"title": "Lavandina",
+		"description": "Para quitar manchas",
+		"price": 200,
+		"thumbnail": "www.google.com/Lavandina",
+		"code": 1,
+		"stock": 100,
+		"id": 1
+	},
+	{
+		"title": "Rejilla",
+		"description": "Para secar vajillas",
+		"price": 400,
+		"thumbnail": "www.google.com/Rejilla",
+		"code": 2,
+		"stock": 200,
+		"id": 2
+	},
+	{
+		"title": "Detergente",
+		"description": "Para lavar vajillas",
+		"price": 400,
+		"thumbnail": "www.google.com/Detergente",
+		"code": 3,
+		"stock": 200,
+		"id": 3
+	},
+	{
+		"title": "Limpia pisos",
+		"description": "Para el piso",
+		"price": 400,
+		"thumbnail": "www.google.com/Limpia_pisos",
+		"code": 4,
+		"stock": 100,
+		"id": 4
+	},
+	{
+		"title": "Ala",
+		"description": "Para la ropa",
+		"price": 500,
+		"thumbnail": "www.google.com/Ala",
+		"code": 5,
+		"stock": 200,
+		"id": 5
+	},
+	{
+		"title": "Cera",
+		"description": "Para el piso",
+		"price": 600,
+		"thumbnail": "www.google.com/Cera",
+		"code": 6,
+		"stock": 100,
+		"id": 6
+	},
+	{
+		"title": "Alcohol en gel",
+		"description": "Para desinfectar",
+		"price": 800,
+		"thumbnail": "www.google.com/Alcohol_en_gel",
+		"code": 7,
+		"stock": 200,
+		"id": 7
+	},
+	{
+		"title": "Servilletas",
+		"description": "Para secarse",
+		"price": 10000,
+		"thumbnail": "www.google.com/Servilletas",
+		"code": 8,
+		"stock": 100,
+		"id": 8
+	},
+	{
+		"title": "Jabon",
+		"description": "Para las manos",
+		"price": 50,
+		"thumbnail": "www.google.com/Jabon",
+		"code": 9,
+		"stock": 200,
+		"id": 9
+	}
+	,
+	{
+		"title": "Blem",
+		"description": "Para los muebles",
+		"price": 850,
+		"thumbnail": "www.google.com/Blem",
+		"code": 10,
+		"stock": 200,
+		"id": 10
+	}
+]
