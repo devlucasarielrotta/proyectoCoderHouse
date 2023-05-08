@@ -32,12 +32,12 @@ class ProductManager {
     addProduct = async ( producto ) => {
 
         try {
-
+         
           const { thumbnail, ...productoNuevo } = producto;
           
 
           const productos = await this.getProducts();
-
+         
           // ************ validaciones generales ***********
           if ( productos.find(( p ) => p.code === productoNuevo.code )) {
             throw  Error(`El producto ${ productoNuevo.title } no se registro ya que el codigo ${ productoNuevo.code } ya existe registrado para otro producto, ingrese otro codigo por favor`);
@@ -51,7 +51,7 @@ class ProductManager {
 
           // ************ validaciones especificas *********** 
           const { title, description, code, price, status, stock, category } = productoNuevo;
-          
+          console.log(code)
           if(
              typeof (title) !== 'string' || 
              typeof (description) !== 'string' || 
@@ -63,7 +63,8 @@ class ProductManager {
 
              return   Error(`Los tipos de datos no coinciden o faltan argumentos, vuelva a intentar`);
           }
-
+          
+          
 
           // agregamos thumbnail si existe
             if( Array.isArray(thumbnail) && thumbnail.every(elemento => typeof (elemento) === 'string')){
@@ -74,7 +75,7 @@ class ProductManager {
 
           productos.length === 0 ? ( productoNuevo.id = 1 ) : ( productoNuevo.id = productos[productos.length - 1].id + 1 );
           productos.push(productoNuevo);
-    
+          
           // lo transforma el arreglo a cadena de texto
           await promises.writeFile( path, JSON.stringify(productos, null, '\t') );
           

@@ -374,5 +374,16 @@
 		"category": "5000",
 		"thumbnail": [],
 		"id": 36
+	},
+	{
+		"title": "webSockets",
+		"description": "prueba webSockets",
+		"code": "10",
+		"price": 100,
+		"status": true,
+		"stock": 1,
+		"category": "programacion",
+		"thumbnail": [],
+		"id": 37
 	}
 ]
